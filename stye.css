@@ -1,0 +1,260 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    color: black;
+}
+
+h1 {
+    font-size: 48px;/*글자 크기*/
+    font-weight: 100;/*글자 굴기*/
+}
+
+.contents1{
+    font-size: 20px;/*글자크기*/
+    font-weight: lighter;/*글자굴기*/
+}
+
+.contents2{
+    /* font-size:*/
+}
+
+.contents3 {
+    font-size: 14px;
+    font-weight: 100;
+}
+.contents1_bold {
+    font-size: 18px;
+    font-weight: bold;
+}
+/*---*/
+.result {
+   font-size: 24px; 
+}
+
+.intro_bg {
+    background-image: url("image/intro.png");/*css로 이미지 불러오는것*/
+    width: 100%;
+    height:718px;
+}
+
+.header {
+    display: flex;/*가로로 베치하는것*/
+    width: 1280px;
+    margin: auto;/*박스에 가운데로 베치하는것*/
+    height: 86px;
+}
+
+.searchArea {
+    width: 300px;
+    height: 40px;
+    background: rgba(0,0,0,0.5);/*투명한 검은색*/
+    border-radius: 5px;/*박스를 둥굴게 하는것*/
+    margin-top:24px ;
+}
+
+.searchArea > form > input {
+    border: none;
+    width: 250px;/*가로넓이*/
+    height: 40px;/*새로넒이*/
+    background: rgba(0, 0, 0, 0.0);
+    color: #fff;
+    padding-left: 10px;
+}
+.searchArea > form > span {
+    width: 50px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.nav {
+    display: flex;/*가로로 베치하는것*/
+    justify-content: flex-end;/*오른쪽으로 정렬*/
+    line-height: 86px;/*글높이*/
+    width: calc(1280px - 300px);
+}
+
+.nav >li {
+    margin-left: 84px;/*HOME  ABOUT SERVLCE  CONTACT 이려게 84PX씩 뛰어 주는것이다.*/
+}
+
+.nav >li >a {
+    color: #fff;
+}
+
+.amount {
+    position: relative;/*dd박스에 현제위치*/
+    top: -66px;/*현재위치에서 강제로 포지션만 바뀌는 거기 때문에 position을 사용하시면*/
+    display: flex;
+    width: 1280px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin: auto; /*마진해서 가운제로 정려하기*/
+}
+
+.amount > li {
+    flex: 1;/*한자리씩자리하기*/
+    height: 132px;/*가로넓이*/
+}
+
+.amount >li >div {
+    text-align: center;
+    margin-top:37px ;/*div을 운데로 오는것*/
+    height: 57px;/*높이*/
+}
+
+.amount > li:not(:last-child) > div{
+   border-right: 1px solid #E1E1E1; /*div에  중가중간 마다 선하는것*/
+}
+.intro_text {
+    width: 100%;
+    margin:231px auto 231px auto;/*세로로 가운데*//*상-우-하-좌*/
+    text-align: center;/*가로로 가운데*/
+}
+
+
+.intro_text > h1, 
+.intro_text > h4{
+    color: #fff;
+}
+
+/* main_text0*/
+.main_text0 {
+    width: 100%;
+    height: 601px;
+    margin-top: -132px;
+    background: #f1f2f3;
+}
+
+.main_text0 > h1 {
+    margin-top:116px;
+    text-align: center;
+}
+
+.main_text0 > .contents1 {
+    text-align: center;
+}
+
+.icons {
+    display: flex;/*박스*/
+    width: 1280px;
+    height: 302px;
+    /* background:orange;*/
+    margin: auto;/*가운데*/
+}
+
+.icons > li {
+  flex: 1;
+  background: white;
+  margin-top: 49px;
+  height: 302px;
+  text-align: center;
+}
+.icons > li > .icon_img{
+    margin-top: 36px;
+}
+
+.icons > li {
+    margin-right: 20px;
+}
+
+.icons  .contents2 {
+    width: 280px;
+    margin: auto;
+    letter-spacing: -1px;
+}
+
+.more {
+  width: 100px;
+  height: 30px;
+  background-color: #2F7AF4;
+  color: #fff;
+  margin: auto;
+}
+
+/* main_text1 */
+.main_text1 {
+    width: 100%;
+    height: 659px;
+}
+
+.main_text1 > h1 {
+    padding-top: 50px;
+    text-align: center;
+
+}
+
+.main_text1 > .contents1 {
+    text-align: center;
+}
+
+
+.service {
+    width: 1280px;
+    display: flex;
+    margin:49px auto;
+    height: 427px;
+}
+
+.service > .contents2 {
+    padding: 20px;
+}
+
+.service >.contents2 > h2  {
+    margin-bottom: 27px;
+}
+
+/* main_text2*/
+.main_text2 {
+  width: 100%;  
+  height: 418px;
+  background-image: url("image/contact.png");
+}
+
+.main_text2  > ul {
+    display:  flex;
+    padding: 138px;
+}
+
+.main_text2  > ul > li {
+    flex: 1;
+    text-align: center;
+}
+
+.main_text2 > ul > li > div >h1,
+.main_text2 > ul > li > div {
+    color: #fff;
+}
+
+.more2 {
+    width: 270px;
+    height: 40px;
+    border: 1px solid #fff;/*보더 버튼에 박스*/
+    line-height: 40px;
+    cursor: pointer;
+    margin:16px auto;
+}
+
+
+
+footer {
+    display: flex;
+    background: #1f1f1f;
+    padding: 30px;
+}
+
+footer > div:first-child {
+    flex: 3;
+    text-align: center;
+    color: #fff;
+}
+footer > div:last-child {
+    flex: 9;
+    color: #fff;
+}
+
+footer > div > a {
+    color: #fff;
+}
